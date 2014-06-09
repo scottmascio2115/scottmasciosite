@@ -42,6 +42,10 @@ body{
   text-shadow: 0 1px rgba(255,255,255,.6);
 }
 
+.front{
+  font-size: 200%
+}
+
 #spot{
   color: #FF9966;
   font-size: 300%;
