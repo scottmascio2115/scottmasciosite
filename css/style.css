@@ -48,6 +48,8 @@ body{
 
 .info{
   font-weight:normal;
+  text-shadow: 0 1px rgba(255,255,255,.6);
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 
