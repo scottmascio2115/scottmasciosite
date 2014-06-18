@@ -46,6 +46,11 @@ body{
   font-size: 200%
 }
 
+.info{
+  font-weight:normal;
+}
+
+
 #spot{
   color: #FF9966;
   font-size: 300%;

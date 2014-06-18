@@ -7,4 +7,5 @@ App.Router.map(function() {
   this.resource('referencesection');
   this.resource('personal');
   this.resource('resume');
+  this.resource('info');
 });
