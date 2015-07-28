@@ -18,7 +18,6 @@
         <div class="container">
            <ul class="nav nav-pills">
             <li><a href="#/resume">Resume</a></li>
-            <li><a href='http://myapprenticeshippatterns.herokuapp.com/'>Blog</a></li>
             <li><a href="#/spot2fish">Spot2Fish</a></li>
             <li><a href="#/apprentice">My Apprenticeship</a></li>
             <li><a href="#/referencesection">ReferenceSection();</a></li>
@@ -32,67 +31,18 @@
     <div class='container'>
       {{outlet}}
     </div>
-
-    <div class='container'>
-      <div class='footer'>
-        <div class="navbar navbar-default navbar-fixed-bottom">
-          <a href="https://twitter.com/_s_mas"><img src="images/twitter.jpeg" alt="twitter" height="50" width="50"></a>
-          <a href='https://github.com/scottmascio2115'><img src="images/github.jpeg" alt="github" height="50" width="50"></a>
-          <a href='https://www.linkedin.com/pub/scott-mascio/68/5aa/23'><img src="images/linkedin.jpeg" alt="linkedin" height="50" width="50"></a>
-          <a href="http://www.neo.com/"><img src="images/neo.jpeg" alt="neo" height="50" width="50"></a>
-          <a href='http://devbootcamp.com/'><img src="images/devbootcamp.jpeg" alt="dbc" height="50" width="50"></a>
-          <a href='http://spot2fish.herokuapp.com/'><img src="images/logo_black.png" alt="spot2fish" height="50" width="50"></a>
-        </div>
-      </div>
-    </div>
  </script>
 
   <script type="text/x-handlebars" data-template-name="spot2fish">
     <span><a href='http://spot2fish.herokuapp.com/'><img src="images/logo_black.png" alt="spot2fish" height="100" width="100"></a></span>
-    <span id='spot'> #spot2fish</span>
-    <h4>Want to go fishing and dont know where to go or what bait to use?</h4><br>
-    <p class='description'>
-    &#9702;<a href='http://www.spot2fish.com/'> Spot2Fish.com</a> looks to solve those problems.<br><br>
-    &#9702; Using Geolocation the Twitter Api, Google Maps Api, Google Maps Places Api and the Instagram Api, Spot2Fish.com &nbsp;&nbsp;searches in a 60 mile radius of your location for Tweets and Instagrams related to fishing.<br><br>
-    &#9702; Thats cool if you want to find people who like to fish, but a user wants to know where to fish!<br><br>
-    &#9702; By filtering the results from the Twitter Api and Instagram Api to only return Tweets and Instagrams that contain &nbsp;&nbsp;geocoordinates we know the location people are posting from.<br><br>
-    &#9702; I use their location in coordination with the Google Maps Api to display their location on a map.<br><br>
-    &#9702; I also find bait and tackle shops in the area and display them on a map with directions from your location.<br><br>
-    <span ><a href='http://spot2fish.herokuapp.com/'><img id='spotpic' src="images/spot.jpeg" alt="spot2fish" height="500" width="500"></a></span><br><br>
-    &#9702; Currently the Spot2fish is in staging at <a href='http://spot2fish.herokuapp.com/'>http://spot2fish.herokuapp.com/</a><br><br>
-    &#9702; Spot2Fish is in staging because currently I am refactoring the javascript code to use the module pattern and I am &nbsp;&nbsp;implementing Handlebars.<br><br>
-    &#9702; Update it in production <a href='http://www.spot2fish.com/'>HERE!!</a><br><br>
-    <a href='https://twitter.com/spot2fish'>I am also building hype on Twitter : )</a><br><br><br>
-    &#9702; Feel free to visit and go fishing!!<br><br><br>
-    <h4>Technologies</h4>
-    <p class='description'>
-    &#9702; Sinatra<br><br>
-    &#9702; jQuery<br><br>
-    &#9702; AJAX<br><br>
-    &#9702; Javascript<br><br>
-    &#9702; Instagram Api<br><br>
-    &#9702; Twitter Api<br><br>
-    &#9702; Google Maps Api<br><br>
-    &#9702; Google Maps Places Api<br><br>
-    &#9702; Handlebars<br><br>
-   </p>
-    <h4>Best Features</h4>
-    <p class='description'>
-    &#9702; Use geolocation to find user current location.<br><br>
-    &#9702; Display Tweet or Instagram with details.<br><br>
-    &#9702; If user declines to use geolocaiton they can search any city.<br><br>
-    &#9702; Save of fishing spot and map of spot.<br><br>
-    &#9702; Vote on the best spots.<br><br>
-    &#9702; Filter top spots by state.<br><br>
-    &#9702; Find bait and tackle shops near user location.<br><br>
-    &#9702; Custom Rake task to run every night using Heroku scheduler to build Twitter hype.<br><br>
-    &#9702; Google Analytics and New Relic to Track site performance.<br><br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
+    <p class='description spot2fish-description'>
+      Spot2fish allows you to vote on the best fishing related posts on social media. You can browse the top rated spots or recently created spots and vote for your favorite spot. Each spot is accompanied by Spot2fish location details and a clickable link to the social media profile of the fisherman or fisherwoman.
+    </p>
+    <p class='description spot2fish-description'>
+      The Spot2fish location details outline the exact location the fisherman or fisherwoman uploaded their fishing related post to social media. The Spot2fish location details include both the latitude and longitude as well as the city and state. In most cases this is the same location where they caught their fish, allowing you to potentially steal their fishing spot. Click the globe icon to reveal the map displaying the potential fishing spot.
+    </p>
+    <p>
+      <a href="https://itunes.apple.com/us/app/spot2fish/id1014977861?mt=8"><img src="images/download_now.png" alt="Download" height="100" width="100"></a>
     </p>
 
   </script>
@@ -101,11 +51,11 @@
     <span><a href="http://www.neo.com/"><img src="images/neo.jpeg" alt="neo" height="150" width="150"></a></span>
     <span><a id='patterns' href='http://myapprenticeshippatterns.herokuapp.com/'><span id='neo'>My Apprenticeship Patterns at Neo</span></a></span>
     <p class='description'>
-    &#9702; I kept a <a href='http://myapprenticeshippatterns.herokuapp.com/'> blog </a> about my apprenticeship at  Neo, the blog is based on the book Apprenticeship Patterns by Dave Hoover.<br><br>
-    &#9702; The book Apprenticeship Patterns outlines values of a good apprentice and how to mold a successful apprenticeship.<br><br>
-    &#9702; Each week my goal was to outline 3 patterns from the book that related to my week as an apprentice.<br><br>
-    &#9702; I very much enjoyed my time as an apprentice. Not only did I increase my skills and contribute to the team, I also &nbsp;&nbsp;developed relationships that I hope to sustain well into the future.<br><br>
-    &#9702; Please contact <a href='https://www.neo.com/offices/columbus'>Neo</a> for references and recommendations.<br><br>
+     I kept a <a href='http://myapprenticeshippatterns.herokuapp.com/'> blog </a> about my apprenticeship at  Neo, the blog is based on the book Apprenticeship Patterns by Dave Hoover.<br><br>
+     The book Apprenticeship Patterns outlines values of a good apprentice and how to mold a successful apprenticeship.<br><br>
+     Each week my goal was to outline 3 patterns from the book that related to my week as an apprentice.<br><br>
+     I very much enjoyed my time as an apprentice. Not only did I increase my skills and contribute to the team, I also developed relationships that I hope to sustain well into the future.<br><br>
+     Please contact <a href='https://www.neo.com/offices/columbus'>Neo</a> for references and recommendations.<br><br>
     <br>
     <br>
     <br>
@@ -120,11 +70,11 @@
     <span><a href="https://plugins.jquery.com/referencesection/"><img src="images/jquery.jpeg" alt="referencesection" height="150" width="150"></a></span>
     <span><a href='http://referencesection.herokuapp.com/'><span id='neo'>referenceSection();</span></a></span>
     <p class='description'>
-    &#9702; jQuery plugin to add a reference section to page with a description of each of the selected elements. The description is &nbsp;&nbsp;also shown on the hover of element.<br><br>
-    &#9702; One of my assignments as an apprentice at Neo was to create a jQuery plugin, and register it with jQuery.<br><br>
-    &#9702; I decided on making a plugin that has the ability to add a reference section to a site or paper.<br><br>
-    &#9702; I outlined the steps I took to create the plugin <a href='http://myapprenticeshippatterns.herokuapp.com/#/jquery_plugin'> here</a>.<br><br>
-    &#9702; I really enjoyed this exercise, it was challenging and gave me a chance to dive head first into jQuery and Javascript, two &nbsp;&nbsp;things that Ive grown to love.<br><br>
+     jQuery plugin to add a reference section to page with a description of each of the selected elements. The description is also shown on the hover of element.<br><br>
+     One of my assignments as an apprentice at Neo was to create a jQuery plugin, and register it with jQuery.<br><br>
+     I decided on making a plugin that has the ability to add a reference section to a site or paper.<br><br>
+     I outlined the steps I took to create the plugin <a href='http://myapprenticeshippatterns.herokuapp.com/#/jquery_plugin'> here</a>.<br><br>
+     I really enjoyed this exercise, it was challenging and gave me a chance to dive head first into jQuery and Javascript, two things that Ive grown to love.<br><br>
     <br>
     <br>
     <br>
@@ -134,11 +84,15 @@
   </script>
 
   <script type="text/x-handlebars" data-template-name="info">
-    <h2 class='info'> Scott Mascio</h2>
-    <h2 class='info'>Cell: 609 315 1786</h2>
     <h2 class='info'>Email: <a href="mailto:scottmascio@gmail.com">scottmascio@gmail.com</a></h2>
+    <h2 class='info'>Cell: 609 315 1786</h2>
     <h2 class='info'>Location: Columbus, OH</h2>
     <h2 class='info'>Twitter: @_s_mas</h2>
+    <p class='personal_description'>
+    <a href="https://twitter.com/_s_mas"><img src="images/twitter.jpeg" alt="twitter" height="50" width="50"></a>
+    <a href='https://github.com/scottmascio2115'><img src="images/github.jpeg" alt="github" height="50" width="50"></a>
+    <a href='https://www.linkedin.com/pub/scott-mascio/68/5aa/23'><img src="images/linkedin.jpeg" alt="linkedin" height="50" width="50"></a><br><br><br>
+    </p>
 
   </script>
 
@@ -148,13 +102,6 @@
   </script>
 
   <script type="text/x-handlebars" data-template-name="personal">
-    <h4>Email: <a href="mailto:scottmascio@gmail.com">scottmascio@gmail.com</a></h2>
-    <h4>Cell: 609-315-1786</h4>
-    <h4>Location: Columbus, OH</h4>
-    <p class='personal_description'>
-    <a href="https://twitter.com/_s_mas"><img src="images/twitter.jpeg" alt="twitter" height="50" width="50"></a>
-    <a href='https://github.com/scottmascio2115'><img src="images/github.jpeg" alt="github" height="50" width="50"></a>
-    <a href='https://www.linkedin.com/pub/scott-mascio/68/5aa/23'><img src="images/linkedin.jpeg" alt="linkedin" height="50" width="50"></a><br><br><br>
     <img id='wife' src="images/wife.jpeg" alt="wife" height="150" width="150"><span class='about'> Married to my Beautiful and Supportive Wife Brooke.</span><br><br><br>
     <img id='wife' src="images/basketball.jpeg" alt="basketball" height="150" width="150"><span class='about'> 4 Year Basketball Player at the University of Tampa.</span><br><br><br>
     <img id='wife' src="images/uoftampa.jpeg" alt="school" height="150" width="150"><span class='about'> Finance Degree: University of Tampa, 2008.</span><br><br><br>
@@ -163,101 +110,153 @@
     <br>
     <br>
     <br>
-    </p>
 
 
   </script>
 
   <script type="text/x-handlebars" data-template-name="resume">
     <div class="container">
-      <h3 id='steps'>"Reflective, Hard Working, Dedicated"</h3>
-         <p id='hello'>My name is Scott Mascio and I enjoy making things.<br><br>
+        <span>
+          <img src="images/profile_image.jpeg" alt="Scott Mascio" height="50" width="50" id='profile-image'>
+        </span>
+        <span class='pull-right'>
+        <b>
+          Mascio Apps LLC. - Founder, August 2014 - Present
+          </b>
+        </span>
+        <h4 class='project-title'>Spot2fish (Web Version)</h4>
+        <p class='description'>
+          Given a location Spot2fish scans social media to find fishing related content posted within a 60 mile radius of the location entered. This location is displayed on a map allowing the user to potentially steal the posters fishing spot. Found at spot2fish.com.
         </p>
+        <h4 class='project-title'>Spot2fish (iOS Version)</h4>
+        <p class='description'>
+          Spot2fish allows you to vote on the best fishing related posts on social media. You can browse the top rated spots or recently created spots and vote for your favorite spot. Each spot is accompanied by Spot2fish location details and a clickable link to the social media profile of the fisherman or fisherwoman. The Spot2fish location details outline the exact location the fisherman or fisherwoman uploaded their fishing related post to social media. Accompanying the location details is a map for the users to find and potentially steal the posters fishing spot. Found in the App Store.
+        </p>
+        <p>
+          <a href="https://itunes.apple.com/us/app/spot2fish/id1014977861?mt=8"><img src="images/download_now.png" alt="Download" height="100" width="100"></a>
+        </p>
+
         <span>
           <a href="http://www.osu.edu/"><img src="images/OhioState_Logo.png" alt="OSU" height="50" width="50"></a>
         </span>
+        <span class='pull-right'>
+        <b>
+          Web Application Developer, August 2014 - Present
+          </b>
+        </span>
+        <h4 class='project-title'>Class Search</h4>
         <p class='description'>
-        &#9702; Current -  Web Applications Developer at The Ohio State University<br><br>
+           Using Node.js and Angular.js I worked to develop the new class search for Ohio State. Still in development at courses.org.ohio-state.edu/class-search. 
+        </p>
+        <h4 class='project-title'>RFC</h4>
+        <p class='description'>
+          Request for Change is a Ruby on Rails application I made allowing the College of Arts and Sciences to request and log changes made.
+        </p>
+        <h4 class='project-title'>AsccommAtWork</h4>
+        <p class='description'>
+          Ruby on Rails application I made allowing the Department of Communications to store contacts throughout the University.
         </p>
         <span>
           <a href="http://www.neo.com/"><img src="images/neo.jpeg" alt="neo" height="50" width="50"></a>
         </span>
+        <span class='pull-right'>
+        <b>
+         Apprentice, February - August 2014
+          </b>
+        </span>
+        <h4 class='project-title'>Daily responsibilities</h4>
         <p class='description'>
-        &#9702; February - August 2014: Apprentice at Neo in Columbus,Oh.<br><br>
-        &#9702; Daily responsibilities as an apprentice were to both learn from my mentors, as well as contribute to client projects.<br><br>
-        &#9702; Neo is a Ruby on Rails shop that uses all the most up to date technologies. Besides using Ruby, Javascript and &nbsp;&nbsp;Rails, I got a chance to get my feet wet in Ember, learn MacVim and I even made a <a href='#/referencesection'> jQuery plugin</a>.<br><br>
-        &#9702; As an apprentice I learned in a lean environment that consisted of daily stand ups, Pivotal tracker, pull requests and &nbsp;&nbsp;retros.<br><br>
-        &#9702; I love my time as an apprentice. Neo is 100% pairing, and the time spent pairing and receiving one on one teaching &nbsp;&nbsp;from the Neo developers is invaluable.<br><br>
-        &#9702; My side project that I worked on while at Neo is Spot2fish.com (currently a work in progress <a href='#/spot2fish'>Spot2Fish</a>).<br><br>
-        &#9702; I have kept a <a href='#/apprentice'> blog </a>during my experience as an apprentice.<br><br>
-        &#9702; Prior to Neo I attended Dev BootCamp.<br><br>
+         Daily responsibilities as an apprentice were to both learn from my mentors, as well as contribute to client projects.
+         </p>
+        <h4 class='project-title'>About Neo</h4>
+        <p class='description'>
+         Neo is a Ruby on Rails shop that uses all the most up to date technologies. Besides using Ruby, Javascript and Rails, I got a chance to get my feet wet in Ember, learn MacVim and I even made a <a href='#/referencesection'> jQuery plugin</a>.<br><br>
+         As an apprentice I learned in a lean environment that consisted of daily stand ups, Pivotal tracker, pull requests and retros.<br><br>
+         I love my time as an apprentice. Neo is 100% pairing, and the time spent pairing and receiving one on one teaching from the Neo developers is invaluable.<br><br>
+         I have kept a <a href='#/apprentice'> blog </a>during my experience as an apprentice.<br><br>
         </p>
         <span>
           <a href="#"><img src="images/skills.jpeg" alt="skills" height="50" width="50"></a>
         </span>
-        <span class='front'> PROGRAMMING LANGUAGES & PRACTICES</span>
+        <span class='pull-right'>
+        <b>
+        Programming Languages & Practices
+          </b>
+        </span>
         <br>
         <br>
         <p class='description'>
-        &#9702; Ruby <br><br>
-        &#9702; Javascript <br><br>
-        &#9702; CSS <br><br>
-        &#9702; HTML <br><br>
-        &#9702; Testing <br><br>
-        &#9702; Git workflow <br><br>
-        &#9702; Pivotal Tracker <br><br>
+         Ruby: Rails, RSPEC, Active Record. <br><br>
+         JavaScript: Angular.js, Node.js, AJAX, jQuery <br><br>
+         iOS: Swift<br><br>
+         Git workflow, Pivotal Tracker, Agile Practices. <br><br>
+         Web Design Principles. <br><br>
         </p>
         <span>
           <a href="#"><img src="images/practices.jpeg" alt="practices" height="50" width="50"></a>
         </span>
-        <span class='front'> SOFTWARES & FRAMEWORKS</span>
+        <span class='pull-right'>
+        <b>
+        Softwares & Frameworks
+          </b>
+        </span>
         <br>
         <br>
         <p class='description'>
-        &#9702; Rails <br><br>
-        &#9702; Sinatra <br><br>
-        &#9702; Active Record <br><br>
-        &#9702; jQuery <br><br>
-        &#9702; AJAX <br><br>
-        &#9702; MacVim <br><br>
-        &#9702; Handlebars <br><br>
-        &#9702; ERB <br><br>
+         Rails <br><br>
+         Angular<br><br>
+         Node<br><br>
+         Xcode<br><br>
         </p>
         <span>
           <a href="#"><img src="images/open_source.jpeg" alt="open source" height="50" width="50"></a>
         </span>
-        <span class='front'> OPEN SOURCE CONTRIBUTIONS</span>
+        <span class='pull-right'>
+        <b>
+         Open Source Contributions
+          </b>
+        </span>
         <br>
         <br>
+        <h4 class='project-title'>jQuery-LazyLoad-Any</h4>
         <p class='description'>
-        &#9702; <a href='https://github.com/emn178/jquery-lazyload-any'> jQuery-LazyLoad-Any</a> <br><br>
-        &#9702; A jQuery plugin provides a lazyload function for images, iframe or anything. <br><br>
+         A jQuery plugin provides a lazyload function for images, iframe or anything. <br><br>
         </p>
         <span>
           <a href='http://devbootcamp.com/'><img src="images/devbootcamp.jpeg" alt="dbc" height="50" width="50"></a>
         </span>
+        <span class='pull-right'>
+        <b>
+        Dev BootCamp - Education
+          </b>
+        </span>
         <br>
         <br>
         <p class='description'>
-        &#9702; Dev BootCamp is a 9 week intensive program teaching Ruby on Rails, Javascript, Jquery and Git workflow.<br><br>
-        &#9702; The fist three weeks of Dev BootCamp focuses on Ruby and is an introduction to Git and Github.<br><br>
-        &#9702; Second three weeks of Dev BootCamp focuses on Sinatra, Active Record, Javascript, jQuery and Heroku.<br><br>
-        &#9702; Final three weeks of Dev BootCamp introduces Rails, Rspec and Jasime.<br><br>
-        &#9702; The finale is a group project that last the final ten days of Dev BootCamp. The cohort is divided into 4 teams of 4 &nbsp;&nbsp;members and our task is to create a website/app using any skills learned at Dev BootCamp.<br><br>
-        &#9702; My team members and I created Adopt-A-Coder, a crowd based scholarship funding program.<br><br>
-        &#9702; Dev Bootcamp has a stellar reputation, and I would recommend it to anyone who wants to get into coding. It &nbsp;&nbsp;changed my life.<br><br>
-        &#9702; Prior to Dev BootCamp I was a trader on the Chicago Board of Trade.<br><br><br>
+         Dev BootCamp is a 9 week intensive program teaching Ruby on Rails, Javascript, Jquery and Git workflow.<br><br>
+         The fist three weeks of Dev BootCamp focuses on Ruby and is an introduction to Git and Github.<br><br>
+         Second three weeks of Dev BootCamp focuses on Sinatra, Active Record, Javascript, jQuery and Heroku.<br><br>
+         Final three weeks of Dev BootCamp introduces Rails, Rspec and Jasime.<br><br>
+         The finale is a group project that last the final ten days of Dev BootCamp. The cohort is divided into 4 teams of 4 members and our task is to create a website/app using any skills learned at Dev BootCamp.<br><br>
+         My team members and I created Adopt-A-Coder, a crowd based scholarship funding program.<br><br>
+         Dev Bootcamp has a stellar reputation, and I would recommend it to anyone who wants to get into coding. It changed my life.<br><br>
+         Prior to Dev BootCamp I was a trader on the Chicago Board of Trade.<br><br><br>
         </p>
         <span>
           <a href='http://www.cmegroup.com/'><img src="images/cme.jpeg" alt="dbc" height="50" width="50"></a>
         </span>
+        <span class='pull-right'>
+        <b>
+        Chicago Board of Trade - Trader
+          </b>
+        </span>
          <br>
          <br>
          <p class='description'>
-         &#9702; I worked for 7 years on the Chicago Board of Trade as a fixed income trader.<br><br>
-         &#9702; Starting as a clerk in the pits I moved my way up to senior trader.<br><br>
-         &#9702; I traded the spread between fixed income futures and the underlying cash price, known as the basis.<br><br>
-         &#9702; I cant say I hated trading or hate trading, I can say it wasnt for me.<br><br>
+          I worked for 7 years on the Chicago Board of Trade as a fixed income trader.<br><br>
+          Starting as a clerk in the pits I moved my way up to senior trader.<br><br>
+          I traded the spread between fixed income futures and the underlying cash price, known as the basis.<br><br>
+          I cant say I hated trading or hate trading, I can say it wasnt for me.<br><br>
          <a href='http://myapprenticeshippatterns.herokuapp.com/#/week_five'>Why did I leave trading?</a> <br><br><br>
          </p>
          <br>

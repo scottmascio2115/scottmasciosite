@@ -10,13 +10,11 @@ body{
 }
 
 .navbar.navbar-default.navbar-fixed-bottom{
-  text-align: center;
   background-color: white;
 }
 
 .navbar.navbar-default.navbar-fixed-bottom a{
   color: black;
-  margin-left: 25px;
 }
 
 
@@ -25,18 +23,36 @@ body{
 }
 
 #steps{
-  text-align: center;
 }
 
 .description{
-  margin-left: 20px;
   font-size: 18px;
   color: #555;
   text-shadow: 0 1px rgba(255,255,255,.6);
 }
 
+.project-title{
+  font-weight: 400;
+}
+
+#fishing-image{
+  border-radius: 10px;
+}
+
+#personal-information{
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+#profile-image{
+  border-radius: 10px;
+}
+
+.spot2fish-description{
+  margin-top: 20px;
+}
+
 .personal_description{
-  margin-left: 20px;
   font-size: 14px;
   color: #555;
   text-shadow: 0 1px rgba(255,255,255,.6);
@@ -56,11 +72,9 @@ body{
 #spot{
   color: #FF9966;
   font-size: 300%;
-  margin-left: 20px;
 }
 
 #spotpic{
-  margin-left: 50px;
 }
 
 #wife{
